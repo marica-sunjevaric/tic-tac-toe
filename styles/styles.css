@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-family: 'Courier New', Courier, monospace, Geneva, Tahoma, sans-serif;
+    --clr-primary: rgb(248, 86, 86);
+    --clr-primary-dark: rgb(104, 22, 22);
+    --clr-gray: #555;
+    --clr-white: white;
+    --padding: 0.5rem;
+}
+h1 {
+    margin-top: 2rem;
+    color: var(--clr-primary-dark);
+    font-size: 2.4rem;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#text {
+    text-align: center;
+    padding: var(--padding);
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--clr-primary-dark);
+}
+.game {
+    width: 15rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.field {
+    padding: var(--padding);
+    width: 5rem;
+    height: 3rem;
+    margin: auto;
+    border: 1.5px solid var(--clr-primary-dark);
+    box-shadow: 1px 1px 2px var(--clr-gray);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--clr-primary-dark);
+    cursor: pointer;
+
+}
+.field:hover {
+    background-color: var(--clr-primary-dark);
+    color: var(--clr-white);
+}
+#btn-reset {
+    padding: var(--padding);
+    width: 8rem;
+    height: 3rem;
+    background-color: var(--clr-primary);
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+#player-turn {
+    padding: var(--padding);
+    box-shadow: 0px 0px 2px var(--clr-primary);
+    border: 1.5px solid var(--clr-primary);
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--clr-primary-dark);
+}

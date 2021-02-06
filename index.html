@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-O</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div class="main">
+        <h1>TIC TAC TOE</h1>
+        <!-- text -->
+        <p id="text">Tap on box for start! <br> First player = X <br> Second player = 0 </p>
+        <br><br>
+        <!-- 3x3 boxes -->
+        <div class="game">
+            <input type="text" class="field" id="b1" onclick=" checkTurn1(); tabBox();" readonly>
+            <input type="text" class="field" id="b2" onclick=" checkTurn2(); tabBox();" readonly>
+            <input type="text" class="field" id="b3" onclick=" checkTurn3(); tabBox();" readonly>
+            <input type="text" class="field" id="b4" onclick=" checkTurn4(); tabBox();" readonly>
+            <input type="text" class="field" id="b5" onclick=" checkTurn5(); tabBox();" readonly>
+            <input type="text" class="field" id="b6" onclick=" checkTurn6(); tabBox();" readonly>
+            <input type="text" class="field" id="b7" onclick=" checkTurn7(); tabBox();" readonly>
+            <input type="text" class="field" id="b8" onclick=" checkTurn8(); tabBox();" readonly>
+            <input type="text" class="field" id="b9" onclick=" checkTurn9(); tabBox();" readonly>
+        </div>
+        <br><br>
+        <!-- button for reset -->
+        <button id="btn-reset" onclick="resetGame()">Reset game</button>
+        <br><br>
+        <!-- player turn notification -->
+        <p id="player-turn">Here goes notification!</p>
+    </div>
+<script src="./js/app.js"></script>
+</body>
+</html>
