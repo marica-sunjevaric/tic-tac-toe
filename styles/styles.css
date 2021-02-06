@@ -49,12 +49,12 @@ h1 {
   border-radius: 5px;
   font-size: 1.2rem;
   text-align: center;
-  color: var(--clr-gray);
+  /* color: var(--clr-gray); */
   cursor: pointer;
 }
 .field:hover {
   background-color: var(--clr-primary);
-  color: var(--clr-primary-dark);
+  /* color: var(--clr-primary-dark); */
 }
 #btn-reset {
   padding: var(--padding);
